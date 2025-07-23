@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+/* ----------------------------Praymary Color---------------------------- */
+/* text */
+.color-primary-text {
+  color: #e95a08;
+}
+.color-paragraph {
+  color: #000000;
+}
+
+.but-praymary {
+  background-color: #e95a08;
+  color: white;
+  padding: 15px 95px;
+  border-radius: 7px;
+}
 /* Navbar styling */
 .nav-content {
   width: 1140px;
@@ -14,6 +29,16 @@
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  width: 135px;
+  height: 82px;
+}
+.shop {
+  color: #8987a1;
+}
+#home {
+  color: #8987a1;
+}
 .nav-links,
 .nav-item {
   display: flex;
@@ -21,11 +46,93 @@
 }
 .nav-links a {
   text-decoration: none;
+  font-size: 20px;
 }
 .nav-links ul {
   list-style: none;
 }
-
+/* ----------------------------------------Fresh Flower----------------------------- */
+.fresh-flower {
+  width: 1140px;
+  /* height: 461px; */
+  margin: 30px auto;
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+}
+.fresh-flower-description {
+  /* padding-top: 100px; */
+  width: 570px;
+  height: 178px;
+  margin-top: 110px;
+}
+.fresh-flower-description h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+.fresh-flower-image {
+  display: block;
+  width: 570px;
+  height: 355px;
+}
+.fresh-flower-image img {
+}
+/* ---------------------------------------Card------------------------------ */
+.card {
+  width: 888px;
+  margin: 50px auto;
+  text-align: center;
+}
+.card h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.card-demu {
+  text-align: center;
+}
+.card-prices {
+  /* background-color: #8987a1; */
+  width: 1140px;
+  margin: 50 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+}
+.main {
+  width: 1140px;
+  margin: auto;
+}
+/* ------------------------------------------------------------------------------ */
+.list-item {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 1.2em;
+  padding: 20px 10px;
+}
+.flower-plant {
+  display: flex;
+  gap: 60px;
+  margin-top: 200px;
+}
+.flower-plant-paragraph {
+  width: 540px;
+}
+.trusted-badge {
+  width: 289px;
+  height: 286px;
+}
+.flower-plant-paragraph h1 {
+  font-size: 50px;
+}
+.flower-plant-paragraph p {
+  font-size: 25px;
+}
+.trusted-badge {
+  position: relative;
+  top: -750px;
+  right: -350px;
+}
 /* Mobile responsive: hide nav-links under 768px */
 
 @media (max-width: 576px) {
@@ -36,5 +143,32 @@
     width: 576px;
     margin: 20px auto;
     padding: 20px;
+  }
+  .fresh-flower {
+    flex-direction: column-reverse;
+    width: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-prices {
+    background-color: #8987a1;
+    width: 576px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .main {
+    width: 576px;
+    margin: auto;
+  }
+  .card {
+    width: 576px;
+    margin: 10px;
+    text-align: center;
+  }
+  .flower-plant {
+    display: none;
   }
 }
