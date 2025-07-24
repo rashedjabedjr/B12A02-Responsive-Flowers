@@ -367,7 +367,14 @@ h1 {
     padding-right: 350px;
   }
   .flower-plant {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .trusted-badge {
     display: none;
+  }
+  .flower-plant-paragraph h1 {
+    width: 400px;
   }
 
   /* Footer------------------------ */
