@@ -133,9 +133,165 @@
   top: -750px;
   right: -350px;
 }
+/* -----------------------------Lates Deal------------------------- */
+.Latest-deal p,
+h1 {
+  width: 888px;
+  margin: 10px auto;
+  text-align: center;
+}
+.Latest-deal h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.Latest-deal p {
+  font-size: 22px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}
+.container-discount {
+  display: flex;
+}
+.card-small-card {
+  background-image: url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  width: 366.22px;
+  height: 206px;
+  filter: brightness(30%);
+  z-index: 0;
+}
+.text {
+  color: aliceblue;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* top: 50px; */
+  z-index: 10;
+}
+.btn-blue {
+  /* color: aliceblue; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  border: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* -------------------------------------------Joind Email From-------------------------- */
+/* .joind {
+  background-image: url(../assets/news-letter-bg.png);
+  margin: auto;
+  align-items: center;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+.joind-from {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+}
+#button-from {
+  display: flex;
+  border: 0;
+}
+#button-from input {
+  padding: 10px 350px 10px 10px;
+  position: relative;
+  right: -2px;
+}
+#button-from button {
+  border: 0;
+  position: relative;
+  left: -1;
+  border-radius: 0;
+}
+.joind-from h1 {
+  color: aliceblue;
+  font-size: 50px;
+  font-weight: bold;
+} */
+
+/* ---------------------Footer---------------------------- */
+.footer {
+  width: 1120px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+}
+.footer-blog {
+  display: flex;
+  gap: 50px;
+}
+.footer-blog ul {
+  list-style: none;
+}
+.footer-img {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Box-------------------------- */
+.box {
+  background-image: url(../assets/news-letter-bg.png);
+  width: 1440px;
+  background-repeat: no-repeat;
+  height: 533px;
+  background-size: contain;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.box h6 {
+  font-size: 45px;
+  display: flex;
+}
+.bg-content {
+  display: grid;
+  place-content: center;
+  padding-top: 100px;
+}
+.subscrive-box {
+  display: flex;
+  max-width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.subscrive-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+.subscrive-box button {
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+}
 /* Mobile responsive: hide nav-links under 768px */
 
-@media (max-width: 576px) {
+@media (min-width: 440px) and (max-width: 800px) {
   .nav-item {
     display: none;
   }
@@ -150,6 +306,14 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .fresh-flower-description {
+    margin: 0;
+    padding: 0;
+  }
+  .trusted-badge {
+    width: auto;
+    height: auto;
   }
   .card-prices {
     background-color: #8987a1;
@@ -170,5 +334,33 @@
   }
   .flower-plant {
     display: none;
+  }
+
+  /* Footer------------------------ */
+  .footer {
+    width: 100%;
+    margin: 10px auto;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: start;
+    align-items: start;
+  }
+  .footer-blog {
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  /* ------------------------------------- */
+  .box {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  .joind-from {
+    padding-top: 10px;
+  }
+  .box h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
